@@ -3,7 +3,7 @@ export class LoginPage{
         return 'Login';
     }
 
-    get linkLogin() {
+    static get linkLogin() {
         return cy.get('a[data-target="#logInModal"]');
     }
 }
