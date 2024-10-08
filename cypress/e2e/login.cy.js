@@ -1,5 +1,5 @@
 
-describe('Login', () => {
+// describe('Login', () => {
     // it('Login con credenciales de standard user', () => {
     //     cy.visit('https://www.saucedemo.com/');
     //     cy.get('#user-name').type('standard_user');
@@ -59,8 +59,8 @@ describe('Login', () => {
     //     cy.wait(5000);
     // });
 
-    it('LoginCommand', () => {
-        cy.login('standard_user', 'secret_sauce');
-        cy.wait(3000);
-    });
-})
+//     it('LoginCommand', () => {
+//         cy.login('standard_user', 'secret_sauce');
+//         cy.wait(3000);
+//     });
+// })

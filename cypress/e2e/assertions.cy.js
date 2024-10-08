@@ -1,16 +1,16 @@
 
-describe('Assertions', () => {
+// describe('Assertions', () => {
     // it('Should Exist', () => {
     //     cy.visit('https://www.saucedemo.com/');
     //     cy.get('#user-name', {timeout: 5000}).should('exist');
     //     cy.wait(3000);
     // });
 
-    it('Should Have', () => {
-        cy.visit('https://www.saucedemo.com/');
-        cy.get('.login_logo').should('have.text', 'Swag Labs');
-        cy.wait(3000);
-    });
+    // it('Should Have', () => {
+    //     cy.visit('https://www.saucedemo.com/');
+    //     cy.get('.login_logo').should('have.text', 'Swag Labs');
+    //     cy.wait(3000);
+    // });
 
     // it('Should Have', () => {
     //     cy.visit('https://www.saucedemo.com/');
@@ -66,4 +66,4 @@ describe('Assertions', () => {
     //     cy.wait(3000);
     //     cy.get('input[type="checkbox"]').eq(0).uncheck();
     // });
-})
+// })

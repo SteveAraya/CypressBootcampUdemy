@@ -13,10 +13,17 @@ npm install cypress --save-dev
 ## Allure:
 
 ```
-npm i @shelex/cypress-allure-plugin
 npm i @mmisty/cypress-allure-adapter
 ```
 
 ```
 npm i allure-commandline
+```
+
+```
+allure open
+```
+
+```
+npm install --save-dev rimraf
 ```
