@@ -25,5 +25,11 @@ export class PaceOrderMethods {
         PaceOrderElements.textboxes.year.invoke('val', year);
     }
 
+    static clickOnCloseButton() {
+        PaceOrderElements.buttons.close.click();
+    }
 
+    static clickOnPurchaseButton() {
+        PaceOrderElements.buttons.purchase.click();
+    }
 }
