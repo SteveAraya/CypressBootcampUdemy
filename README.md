@@ -27,3 +27,9 @@ allure open
 ```
 npm install --save-dev rimraf
 ```
+
+## Parallel:
+
+```
+npm i cypress-parallel --save-dev
+```

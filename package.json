@@ -6,11 +6,12 @@
   "scripts": {
     "clean": "rimraf ./allure-report && rimraf ./allure-results",
     "open": "npx cypress open",
-    "test": "npx cypress run --headed",
+    "test:only": "npx cypress run --headed",
     "test:allure": "npx cypress run --headed --env allure=true",
     "report": "allure generate allure-results -o allure-report --clean",
     "open:allure": "allure open",
-    "test:total": "npm run clean && npm run test:allure; npm run report && npm run open:allure"
+    "test": "npm run clean && npm run test:allure; npm run report && npm run open:allure",
+    "cy:parallel" : "cypress-parallel -s test -t 5 -d ./cypress/e2e/tests"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +24,7 @@
     "cypress": "^13.14.2"
   },
   "devDependencies": {
+    "cypress-parallel": "^0.14.0",
     "rimraf": "^6.0.1"
   }
 }
