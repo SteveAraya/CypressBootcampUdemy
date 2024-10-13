@@ -1,4 +1,5 @@
 import { SignUpElements } from "./signup.elements";
+import { CommonPageMethods } from "../common-page/common-page.methods";
 
 export class SignUpMethods {
     static insertUserName(username) {
