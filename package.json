@@ -7,7 +7,7 @@
     "clean": "rimraf ./allure-report && rimraf ./allure-results",
     "open": "npx cypress open",
     "test:only": "npx cypress run --headed",
-    "test:allure": "npx cypress run --headed --env allure=true",
+    "test:allure": "npx cypress run --env allure=true",
     "report": "allure generate allure-results -o allure-report --clean",
     "open:allure": "allure open",
     "test": "npm run clean && npm run test:allure; npm run report && npm run open:allure",
