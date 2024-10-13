@@ -11,7 +11,7 @@
     "report": "allure generate allure-results -o allure-report --clean",
     "open:allure": "allure open",
     "test": "npm run clean && npm run test:allure; npm run report && npm run open:allure",
-    "cy:parallel" : "cypress-parallel -s test -t 5 -d ./cypress/e2e/tests"
+    "cy:parallel" : "npm run clean && cypress-parallel -s test:allure -t 5 -d ./cypress/e2e/tests; npm run report"
   },
   "keywords": [],
   "author": "",
