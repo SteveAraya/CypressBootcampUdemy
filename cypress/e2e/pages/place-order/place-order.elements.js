@@ -1,4 +1,4 @@
-export class PaceOrderElements {
+export class PlaceOrderElements {
     static get textboxes() {
         return {
             get name() {

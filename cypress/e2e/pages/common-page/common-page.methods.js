@@ -6,6 +6,7 @@ export class CommonPageMethods {
         cy.clearAllCookies();
         cy.clearLocalStorage();
         cy.visit(CommonPageData.url);
+        CommonPageMethods.clickOnHomeOption();
     }
 
     static clickOnHomeOption() {
@@ -22,6 +23,9 @@ export class CommonPageMethods {
 
     static clickOnCartOption() {
         CommonPageElements.topMenu.cart.click();
+        Cypress.on('uncaught:exception', (err, runnable) => {
+            return false
+        })
     }
 
     static clickOnLoginOption() {

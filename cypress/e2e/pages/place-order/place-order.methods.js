@@ -1,35 +1,44 @@
-import { PaceOrderElements } from "./place-order.elements";
+import { PlaceOrderElements } from "./place-order.elements";
 
-export class PaceOrderMethods {
+export class PlaceOrderMethods {
     static insertName(name) {
-        PaceOrderElements.textboxes.name.invoke('val', name);
+        PlaceOrderElements.textboxes.name.invoke('val', name);
     }
 
     static insertCountry(country) {
-        PaceOrderElements.textboxes.country.invoke('val', country);
+        PlaceOrderElements.textboxes.country.invoke('val', country);
     }
 
     static insertCity(city) {
-        PaceOrderElements.textboxes.city.invoke('val', city);
+        PlaceOrderElements.textboxes.city.invoke('val', city);
     }
 
     static insertCreditCard(creditCard) {
-        PaceOrderElements.textboxes.creditCard.invoke('val', creditCard);
+        PlaceOrderElements.textboxes.creditCard.invoke('val', creditCard);
     }
 
     static insertMonth(month) {
-        PaceOrderElements.textboxes.month.invoke('val', month);
+        PlaceOrderElements.textboxes.month.invoke('val', month);
     }
 
     static insertYear(year) {
-        PaceOrderElements.textboxes.year.invoke('val', year);
+        PlaceOrderElements.textboxes.year.invoke('val', year);
     }
 
     static clickOnCloseButton() {
-        PaceOrderElements.buttons.close.click();
+        PlaceOrderElements.buttons.close.click();
     }
 
     static clickOnPurchaseButton() {
-        PaceOrderElements.buttons.purchase.click();
+        PlaceOrderElements.buttons.purchase.click();
+    }
+
+    static insertOrderInformation(data) {
+        this.insertName(data.name)
+        this.insertCountry(data.country)
+        this.insertCity(data.city)
+        this.insertCreditCard(data.creditCardNumber)
+        this.insertMonth(data.month)
+        this.insertYear(data.year)
     }
 }

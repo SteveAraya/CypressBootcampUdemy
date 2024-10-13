@@ -1,4 +1,4 @@
-export class PaceOrderData {
+export class PlaceOrderData {
     static get testData() {
         return {
             name: 'Test User',

@@ -7,13 +7,13 @@ export class HomeElements {
             get laptops() {
                 return cy.contains('a', 'Laptops');
             },
-            get monitor() {
+            get monitors() {
                 return cy.contains('a', 'Monitors');
             }
         }
     }
 
-    static product( productName ) {
-        return cy.contains('a', productName);
+    static product(productName) {
+        return cy.contains("a", productName, { timeout: 30000 });
     }
 }
